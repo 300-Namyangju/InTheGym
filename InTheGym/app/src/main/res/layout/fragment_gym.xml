@@ -2,113 +2,79 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent">
 
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gym_toolbar" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:contentInsetLeft="0dp"
-        app:contentInsetStart="0dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="horizontal"
-                android:paddingTop="10dp">
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="10"
-                    android:background="@drawable/gym_edittext_bg"
-                    android:drawablePadding="10dp"
-                    android:drawableStart="@drawable/ic_search"
-                    android:fontFamily="@font/nanum_gothic_bold"
-                    android:hint="체육관을 검색해보세요."
-                    android:padding="15dp"
-                    android:textColor="#b7b7b7"
-                    android:textSize="15sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:orientation="horizontal">
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="내 위치"
-                        android:textColor="#4a90e2"
-                        android:textSize="15sp" />
-
-                    <ImageView
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/ic_check_blue" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="별점순 "
-                        android:textColor="#4a90e2"
-                        android:textSize="15sp" />
-
-                    <ImageView
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/ic_check_blue" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </android.support.v7.widget.Toolbar>
-
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0">
 
-    </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/gym_linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <ImageView
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/gym_top" />
+
+            <ImageView
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/gym_bottom" />
+
+            <ImageView
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/gym_bottom" />
+
+            <ImageView
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/gym_middle" />
+
+            <ImageView
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/gym_top" />
+
+            <ImageView
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/gym_middle" />
+
+            <ImageView
+                android:scaleType="fitStart"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/gym_bottom" />
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

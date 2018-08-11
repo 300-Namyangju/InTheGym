@@ -1,13 +1,15 @@
 package com.taeiim.inthegym.Activity;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.taeiim.inthegym.Fragment.GymFragment;
 import com.taeiim.inthegym.Fragment.HomeFragment;
+import com.taeiim.inthegym.Fragment.RealTimeFragment;
+import com.taeiim.inthegym.Fragment.RecruitmentFragment;
 import com.taeiim.inthegym.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new GymFragment()).commit();
                         break;
                     case 2:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RecruitmentFragment()).commit();
                         break;
                     case 3:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RealTimeFragment()).commit();
                         break;
                 }
                 return true;
