@@ -12,11 +12,8 @@
         <activity android:name=".Activity.MainActivity">
 
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".Activity.PayActivity">
-=======
+        <activity android:name=".Activity.PayActivity"/>
         <activity android:name=".Activity.DetailActivity">
->>>>>>> 860e58341942c48ca776e698af8a0664220a6d48
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
