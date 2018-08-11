@@ -39,7 +39,6 @@
                     android:hint="체육관을 검색해보세요."
                     android:padding="15dp"
                     android:textColor="#b7b7b7"
-                    android:textColorHighlight=""
                     android:textSize="15sp" />
 
                 <View

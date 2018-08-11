@@ -21,7 +21,6 @@ public class GymFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_gym, container, false);
 
-
         return rootView;
     }
 
