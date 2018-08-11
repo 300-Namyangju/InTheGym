@@ -4,11 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="운동할 곳이 한손에, \n어떤 체육관을 찾으시나요?"
+            android:fontFamily="@font/nanum_gothic_bold"/>
+        
+        <EditText
+            style="@style/EditText"/>
     </LinearLayout>
 
 </ScrollView>
