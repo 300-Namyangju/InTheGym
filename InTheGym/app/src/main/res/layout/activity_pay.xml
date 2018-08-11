@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/img_pay1"/>
+
+        <ImageView
+            android:id="@+id/calendarImgView"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:src="@drawable/img_pay2"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/img_pay3"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/img_pay4"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:src="@drawable/img_pay5"/>
+
+    </LinearLayout>
+</ScrollView>

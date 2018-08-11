@@ -7,19 +7,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/main_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:background="@color/white"
             app:contentInsetStart="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="12dp">
+            app:layout_constraintTop_toTopOf="parent">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -30,16 +30,17 @@
                     android:id="@+id/appLogoImg"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:src="@drawable/ic_search"/>
+                    android:src="@drawable/ic_search" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/appLogoImg"
                     android:fontFamily="@font/nanum_gothic_extra_bold"
                     android:text="인더짐"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="18sp"
-                    android:layout_toRightOf="@+id/appLogoImg"
-                    android:layout_marginLeft="8dp"/>
+                    android:textSize="18sp" />
 
             </RelativeLayout>
         </android.support.v7.widget.Toolbar>
@@ -52,19 +53,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="24dp"
                 android:fontFamily="@font/nanum_gothic_bold"
                 android:text="운동할 곳이 한손에, \n어떤 체육관을 찾으시나요?"
                 android:textColor="@color/black"
-                android:textSize="20dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="28dp"/>
+                android:textSize="20dp" />
 
-            <EditText style="@style/EditText"
-                android:hint="체육관을 검색해보세요"
+            <EditText
+                style="@style/EditText"
                 android:layout_marginTop="25dp"
+                android:drawableStart="@drawable/ic_search"
                 android:focusable="false"
-                android:drawableStart="@drawable/ic_search"/>
+                android:hint="체육관을 검색해보세요" />
 
 
         </LinearLayout>
