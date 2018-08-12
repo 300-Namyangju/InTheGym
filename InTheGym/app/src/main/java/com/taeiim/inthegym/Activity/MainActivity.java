@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
     private void setUpTabLayout() {
         bottomTabLayout = (AHBottomNavigation) findViewById(R.id.main_tabLayout);
 
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem("홈", R.drawable.ic_person);
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem("체육관", R.drawable.ic_person);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem("운동모집", R.drawable.ic_person);
-        AHBottomNavigationItem item4 = new AHBottomNavigationItem("MY", R.drawable.ic_person);
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem("홈", R.drawable.ic_home);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem("체육관", R.drawable.ic_gym);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem("운동모집", R.drawable.ic_exercise);
+        AHBottomNavigationItem item4 = new AHBottomNavigationItem("실시간 매칭", R.drawable.ic_sand_clock);
 
         AHBottomNavigationItem[] navigationItems = {item1,item2,item3,item4};
 

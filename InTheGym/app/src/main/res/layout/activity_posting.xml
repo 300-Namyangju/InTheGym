@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_posting1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="제목" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rounded_solid_gray"
+                    android:hint="제목을 입력하세요."
+                    android:paddingLeft="24dp"
+                    android:textSize="13dp" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_marginTop="24dp"
+                    android:text="모임지역 체육관" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rounded_solid_gray"
+                    android:hint="예) 남양주시 외부 체육 문화센터"
+                    android:paddingLeft="24dp"
+                    android:textSize="13dp" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_marginTop="24dp"
+                    android:text="모임 시간" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_rounded_solid_gray"
+                        android:hint="예) 요일"
+                        android:paddingLeft="24dp"
+                        android:textSize="13dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="0.1" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/shape_rounded_solid_gray"
+                        android:hint="예) 몇시 ~ 몇시까지"
+                        android:paddingLeft="24dp"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_marginTop="24dp"
+                    android:text="소개하기" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rounded_solid_gray"
+                    android:hint="모임을 자유롭게 소개해주세요."
+                    android:paddingLeft="24dp"
+                    android:textSize="13dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/postingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_posting2"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

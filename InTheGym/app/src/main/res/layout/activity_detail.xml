@@ -37,7 +37,7 @@
             android:layout_height="match_parent"
             android:scaleType="fitStart"
             android:src="@drawable/detail_detail"
-
+            android:adjustViewBounds="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +50,7 @@
             android:scaleType="fitStart"
             android:src="@drawable/detail_review"
             android:visibility="invisible"
+            android:adjustViewBounds="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
